@@ -105,3 +105,36 @@ p {
     text-align: center;
   }
 }
+
+/* hero */
+.hero-header {
+  min-height: 100vh;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner {
+  padding: 0 1rem;
+}
+
+.hero-banner p {
+  width: 80%;
+  max-width: 560px;
+  font-size: 1rem;
+}
+
+@media (width <= 600px) {
+  .hero-banner {
+    padding: 0 3rem;
+  }
+}
+
+@media (768px <= width) {
+  .hero-header {
+    background: linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75)),
+      url(./images/image-2.jpeg) center/cover fixed;
+  }
+}
